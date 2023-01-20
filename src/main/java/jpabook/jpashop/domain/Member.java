@@ -2,7 +2,6 @@ package jpabook.jpashop.domain;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.apache.tomcat.jni.Address;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -16,7 +15,7 @@ public class Member {
     @Id
     @GeneratedValue
     @Column(name = "number_id")
-    public Long id;
+    private Long id;
 
     private String name;
 
